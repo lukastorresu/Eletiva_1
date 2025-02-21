@@ -10,7 +10,7 @@
     <h1>Exercício 2</h1>
     <p>
         
-    <form method="post">
+    <form method="post" action="exer2resposta.php">
                         
                         <div class="mb-3">
                             <label for="telefone" class="form-label">Telefone Residencial</label>
