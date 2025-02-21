@@ -9,15 +9,21 @@
   <body>
     <h1>Resposta1</h1>
     <?php 
-        if ($_SERVER['REQUEST_METHOD'])
-        $valor1 = $_POST['valor1'];
-        $valor2 = $_POST['valor2'];
-        $soma = $valor1 + $valor2;
-        echo "O valor da soma é: $soma";
-        $div = $valor1 / $valor2;
-        $mult = $valor1 * $valor2;
-        $quad1 = $valor1 * $valor1;
-        $quad2 = $valor2 * $valor2;
+        if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+            try {
+            $valor1 = $_POST['valor1'];
+            $valor2 = $_POST['valor2'];
+            $soma = $valor1 + $valor2;
+            echo "O valor da soma é: $soma";
+            $div = $valor1 / $valor2;
+            $mult = $valor1 * $valor2;
+            $quad1 = $valor1 * $valor1;
+            $quad2 = $valor2 * $valor2;
+                } catch(Exception $e){
+                    echo $e->getMessage();
+                }
+        }
+     
         
     
     
