@@ -10,7 +10,7 @@
     <h1>Formulário 1</h1>
     <p>
         
-    <form method="post" action="resposta.php">
+    <form method="post">
                         
                         
                       <div class="row">
