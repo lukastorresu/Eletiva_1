@@ -83,8 +83,15 @@
                             </select>
                         </div>
 </div>
+<div class="row">
+<div class="col">
+  <p> </p>
+</div>
+                    <div class="col">
                       <button type="submit" class="btn btn-danger">Resetar</button>
                       <button type="submit" class="btn btn-success">Próximo</button>
+</div>
+</div>
                 </form>
             
             
