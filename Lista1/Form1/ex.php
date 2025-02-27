@@ -13,38 +13,45 @@
     <form method="post" action="resposta.php">
                         
                         
-                        <div class="mb-3">
+                      <div class="row">
+                        <div class="col">
                             <label for="fname" class="form-label">First Name</label>
-                            <input type="text" id="fname" name="fname" class="form-control" required="">
+                            <input placeholder="Mark" type="text" id="fname" name="fname" class="form-control" required="">
                         </div>
                     
-                        <div class="mb-3">
+                        <div class="col">
                             <label for="lname" class="form-label">Last Name</label>
-                            <input type="text" id="lname" name="lname" class="form-control" required="">
+                            <input placeholder="Otto" type="text" id="lname" name="lname" class="form-control" required="">
                         </div>
                     
-                        <div class="mb-3">
+                        <div class="input-group col">
+                          <span class="input-group-text" id="basic-addon1">@</span>
+                          <input placeholder="Username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+</div>
+<div class="row">
+                        <div class="col">
                             <label for="City" class="form-label">City</label>
-                            <input type="text" id="City" name="City" class="form-control" required="">
+                            <input placeholder="City" type="text" id="City" name="City" class="form-control" required="">
                         </div>
                     
-                        <div class="mb-3">
+                        <div class="col">
                             <label for="State" class="form-label">State</label>
-                            <input type="text" id="State" name="State" class="form-control" required="">
+                            <input placeholder="State" type="text" id="State" name="State" class="form-control" required="">
                         </div>
                     
-                        <div class="mb-3">
+                        <div class="col-2">
                             <label for="zip" class="form-label">Zip</label>
-                            <input type="number" id="zip" name="zip" class="form-control" required="">
+                            <input placeholder="Zip" type="number" id="zip" name="zip" class="form-control" required="">
                         </div>
-
+</div>
                         <div class="form-check">
                                 <input type="checkbox" id="conf" name="conf" class="form-check-input" required="">
                                 <p>Agree to terms and coditions</p>
                                 <label for="conf" class="form-check-label"></label> 
                             </div>
                     
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-primary">Submit form</button>
                 </form>
             
             
