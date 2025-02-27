@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Exercício 2</h1>
+    <h1>Formulário 1</h1>
     <p>
         
     <form method="post" action="resposta.php">
@@ -37,6 +37,12 @@
                             <label for="zip" class="form-label">Zip</label>
                             <input type="number" id="zip" name="zip" class="form-control" required="">
                         </div>
+
+                        <div class="form-check">
+                                <input type="checkbox" id="conf" name="conf" class="form-check-input" required="">
+                                <p>Agree to terms and coditions</p>
+                                <label for="conf" class="form-check-label"></label> 
+                            </div>
                     
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
