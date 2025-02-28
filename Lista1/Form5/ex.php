@@ -12,7 +12,6 @@
     <h1>Formulário 5</h1>
     <p>
 
-
     <form method="post">
         <div class="row">
             <div class="col-3">
@@ -25,9 +24,9 @@
                 <input type="text" id="lname" name="lname" class="form-control" required="">
             </div>
         </div>
+
         <label for="user" class="form-label">Username</label>
         <div class="input-group">
-
             <span class="input-group-text" id="basic-addon1">@</span>
             <input id="user" name="user" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
         </div>
