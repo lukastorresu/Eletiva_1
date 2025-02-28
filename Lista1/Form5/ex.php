@@ -13,50 +13,50 @@
     
     <form method="post">
                         
-                        <div class="mb-3">
+                        <div class="col">
                             <label for="fname" class="form-label">First Name</label>
                             <input type="text" id="fname" name="fname" class="form-control" required="">
                         </div>
                     
-                        <div class="mb-3">
+                        <div class="col">
                             <label for="lname" class="form-label">Last Name</label>
                             <input type="text" id="lname" name="lname" class="form-control" required="">
                         </div>
                     
-                        <div class="mb-3">
+                        <div class="col">
                             <label for="email" class="form-label">Email (Optional)</label>
-                            <input type="email" id="email" name="email" class="form-control">
+                            <input placeholder="you@example.com" type="email" id="email" name="email" class="form-control">
                         </div>
                     
-                        <div class="mb-3">
+                        <div class="col">
                             <label for="endereco" class="form-label">Address</label>
-                            <input type="text" id="endereco" name="endereco" class="form-control" required="">
+                            <input placeholder="1234 Main St" type="text" id="endereco" name="endereco" class="form-control" required="">
                         </div>
                     
-                        <div class="mb-3">
+                        <div class="col">
                             <label for="endereco2" class="form-label">Address 2 (Optional)</label>
-                            <input type="text" id="endereco2" name="endereco2" class="form-control" required="">
+                            <input placeholder="Apartment or Suite" type="text" id="endereco2" name="endereco2" class="form-control" required="">
                         </div>
                     
-                        <div class="mb-3">
+                        <div class="col">
                             <label for="pais" class="form-label">Country</label>
                             <select id="pais" name="pais" class="form-select" required="">
                                 <option value="Brasil">Brasil</option><option value="Colombia">Colombia</option><option value="Dinamarca">Dinamarca</option><option value="Espanha">Espanha</option><option value="França">França</option><option value="Guiana">Guiana</option><option value="Holanda">Holanda</option><option value="Inglaterra">Inglaterra</option>
                             </select>
                         </div>
                     
-                        <div class="mb-3">
+                        <div class="col">
                             <label for="estado" class="form-label">State</label>
                             <select id="estado" name="estado" class="form-select" required="">
                                 <option value="MG">MG</option><option value="PR">PR</option><option value="SC">SC</option><option value="SP">SP</option>
                             </select>
                         </div>
                     
-                        <div class="mb-3">
+                        <div class="col">
                             <label for="cep" class="form-label">Zip</label>
                             <input type="number" id="cep" name="cep" class="form-control" required="">
                         </div>
-              
+              /* Não tem botão no exercício */
                 </form>
             
     </p>
