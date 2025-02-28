@@ -43,7 +43,7 @@
 
         <div class="col-6">
             <label for="endereco2" class="form-label">Address 2 (Optional)</label>
-            <input placeholder="Apartment or Suite" type="text" id="endereco2" name="endereco2" class="form-control" required="">
+            <input placeholder="Apartment or Suite" type="text" id="endereco2" name="endereco2" class="form-control">
         </div>
         <div class="row">
             <div class="col-2">
