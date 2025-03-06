@@ -14,10 +14,11 @@
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       try {
-        $peso = $_POST['peso'];
-        $altura = floatval($_POST['altura']);
-        $imc = $peso / ( $altura * $altura );
-        echo "Seu IMC é igual a: $imc ";
+        $preco = floatval($_POST['preco']);
+        $desconto = floatval($_POST['desconto']);
+        $desconto = $desconto / 100;
+        $novo = $preco - ($preco * $desconto);
+        echo "O novo valor com o desconto é igual: R$ $novo ";
       } catch (Exception $e) {
         echo $e->getMessage();  
       }

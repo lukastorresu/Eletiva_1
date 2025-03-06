@@ -9,20 +9,20 @@
 </head>
 
 <body>
-<h1>Exercício 15 - Calcular IMC</h1>
+<h1>Exercício 16 - Calcular Desconto</h1>
   <p>
 
   <form method="post" action="resposta.php">
 
   <div class="row">
       <div class="col-2">
-        <label for="peso" class="form-label">Peso:</label>
-        <input type="number" id="peso" name="peso" class="form-control" required="">
+        <label for="preco" class="form-label">Preço:</label>
+        <input type="text" id="preco" name="preco" class="form-control" required="">
       </div>
 
       <div class="col-2">
-        <label for="altura" class="form-label">Altura:</label>
-        <input type="text" id="altura" name="altura" class="form-control" required="">
+        <label for="desconto" class="form-label">Porcentagem do Desconto:</label>
+        <input type="text" id="desconto" name="desconto" class="form-control" required="">
       </div>
     </div>
 
