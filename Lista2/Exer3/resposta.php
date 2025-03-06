@@ -14,8 +14,8 @@
                     try {
                         $valor1 = $_POST['valor1'];
                         $valor2 = $_POST['valor2'];
-                        $sub = $valor1 - $valor2;
-                        echo "O valor da subtração é: $sub";
+                        $mult = $valor1 * $valor2;
+                        echo "O valor da multiplicação é: $mult";
                         
                     }catch(Exception $e){
                         echo $e->getMessage();
