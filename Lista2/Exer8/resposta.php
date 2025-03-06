@@ -14,10 +14,10 @@
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       try {
-        $valor1 = $_POST['valor1'];
-        $valor2 = $_POST['valor2'];
-        $mult = $valor1 * $valor2;
-        echo "O valor da multiplicação é: $mult";
+        $base = $_POST['base'];
+        $altura = $_POST['altura'];
+        $area = $base * $altura;
+        echo "A área do retângulo é: $area";
       } catch (Exception $e) {
         echo $e->getMessage();
       }

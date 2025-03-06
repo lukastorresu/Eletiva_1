@@ -9,20 +9,20 @@
 </head>
 
 <body>
-  <h1>Exercício 7 - Converter Graus Fahrenheit em Celsius</h1>
+  <h1>Exercício 8 - Calcular Área Retângulo</h1>
   <p>
 
   <form method="post" action="resposta.php">
 
   <div class="row">
       <div class="col-2">
-        <label for="valor1" class="form-label">Valor 1</label>
-        <input type="number" id="valor1" name="valor1" class="form-control" required="">
+        <label for="base" class="form-label">Base:</label>
+        <input type="number" id="base" name="base" class="form-control" required="">
       </div>
 
       <div class="col-2">
-        <label for="valor2" class="form-label">Valor 2</label>
-        <input type="number" id="valor2" name="valor2" class="form-control" required="">
+        <label for="altura" class="form-label">Altura:</label>
+        <input type="number" id="altura" name="altura" class="form-control" required="">
       </div>
     </div>
 
