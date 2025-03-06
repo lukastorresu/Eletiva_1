@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Exercício 3 - Multiplicar Valores</h1>
+    <h1>Exercício 4 - Dividir Valores</h1>
     <p>
         
     <form method="post" action="resposta.php">
