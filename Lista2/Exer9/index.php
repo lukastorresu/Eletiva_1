@@ -9,21 +9,17 @@
 </head>
 
 <body>
-  <h1>Exercício 8 - Calcular Área Retângulo</h1>
+  <h1>Exercício 9 - Calcular Área Círculo</h1>
   <p>
 
   <form method="post" action="resposta.php">
 
   <div class="row">
       <div class="col-2">
-        <label for="base" class="form-label">Base:</label>
-        <input type="number" id="base" name="base" class="form-control" required="">
+        <label for="raio" class="form-label">Raio do Círculo:</label>
+        <input type="number" id="raio" name="raio" class="form-control" required="">
       </div>
 
-      <div class="col-2">
-        <label for="altura" class="form-label">Altura:</label>
-        <input type="number" id="altura" name="altura" class="form-control" required="">
-      </div>
     </div>
 
     <button type="submit" class="btn btn-primary">Enviar</button>

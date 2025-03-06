@@ -14,10 +14,9 @@
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       try {
-        $base = $_POST['base'];
-        $altura = $_POST['altura'];
-        $area = $base * $altura;
-        echo "A área do retângulo é: $area";
+        $raio = $_POST['raio'];
+        $area = 3.14 * ($raio * $raio);
+        echo "A área do círculo é: $area";
       } catch (Exception $e) {
         echo $e->getMessage();
       }
