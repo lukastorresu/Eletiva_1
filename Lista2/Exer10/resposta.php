@@ -16,8 +16,8 @@
       try {
         $base = $_POST['base'];
         $altura = $_POST['altura'];
-        $area = $base * $altura;
-        echo "A área do retângulo é: $area";
+        $perimetro = 2 * ($base + $altura);
+        echo "O perímetro do retângulo é: $perimetro";
       } catch (Exception $e) {
         echo $e->getMessage();
       }

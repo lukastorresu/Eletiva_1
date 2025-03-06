@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <h1>Exercício 8 - Calcular Área Retângulo</h1>
+  <h1>Exercício 10 - Calcular Perímetro Retângulo</h1>
   <p>
 
   <form method="post" action="resposta.php">
