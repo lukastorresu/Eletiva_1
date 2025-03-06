@@ -15,9 +15,9 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       try {
         $base = $_POST['base'];
-        $altura = $_POST['altura'];
-        $area = $base * $altura;
-        echo "A área do retângulo é: $area";
+        $expoente = $_POST['expoente'];
+        $result = $base ** $expoente;
+        echo "A base $base elevado ao expoente $expoente é igual a: $result";
       } catch (Exception $e) {
         echo $e->getMessage();
       }

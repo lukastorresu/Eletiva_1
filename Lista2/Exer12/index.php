@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <h1>Exercício 8 - Calcular Área Retângulo</h1>
+  <h1>Exercício 12 - Calcular Número Elevado</h1>
   <p>
 
   <form method="post" action="resposta.php">
@@ -21,8 +21,8 @@
       </div>
 
       <div class="col-2">
-        <label for="altura" class="form-label">Altura:</label>
-        <input type="number" id="altura" name="altura" class="form-control" required="">
+        <label for="expoente" class="form-label">Expoente:</label>
+        <input type="number" id="expoente" name="expoente" class="form-control" required="">
       </div>
     </div>
 
