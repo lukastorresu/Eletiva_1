@@ -11,19 +11,15 @@
         <p>
             <?php 
                 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-                    try {
                         $valor1 = $_POST['valor1'];
                         $valor2 = $_POST['valor2'];
-                        $div = $valor1 / $valor2;
                         if ($valor2 == 0) {
                           echo "O segundo valor não pode ser igual a 0.";
                         }
-                        echo "O valor da divisão é: $div";
-                        
-                    }catch(Exception $e){
-                        echo $e->getMessage();
+                        else {
+                          $div = $valor1 / $valor2;
+                          echo "O valor da divisão é: $div";}
                     }
-                }
             ?>
         </p>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
