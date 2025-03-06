@@ -15,8 +15,8 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       try {
         $raio = $_POST['raio'];
-        $area = 3.14 * ($raio * $raio);
-        echo "A área do círculo é: $area";
+        $perimetro = 2 * (3.14 * $raio);
+        echo "O perímetro do círculo é: $perimetro";
       } catch (Exception $e) {
         echo $e->getMessage();
       }

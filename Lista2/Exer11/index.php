@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <h1>Exercício 9 - Calcular Área Círculo</h1>
+  <h1>Exercício 11 - Calcular Perímetro Círculo</h1>
   <p>
 
   <form method="post" action="resposta.php">
