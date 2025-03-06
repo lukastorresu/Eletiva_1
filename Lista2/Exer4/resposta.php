@@ -15,6 +15,9 @@
                         $valor1 = $_POST['valor1'];
                         $valor2 = $_POST['valor2'];
                         $div = $valor1 / $valor2;
+                        if ($valor2 == 0) {
+                          echo "O segundo valor não pode ser igual a 0.";
+                        }
                         echo "O valor da divisão é: $div";
                         
                     }catch(Exception $e){
