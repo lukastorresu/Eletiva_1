@@ -13,10 +13,13 @@
   <p>
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-      $valor1 = $_POST['valor1'];
-
-      $c = (( $valor1 - 32 ) * 5 ) / 9;
-      echo "A temperatura em Celsius é: $c ºC";
+      try {
+        $metro = $_POST['metro'];
+        $cm = $metro * 100;
+        echo "A distância em Centímetros é: $cm cm";
+      } catch (Exception $e) {
+        echo $e->getMessage();  
+      }
     }
 
     ?>

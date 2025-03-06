@@ -9,17 +9,18 @@
 </head>
 
 <body>
-  <h1>Exercício 7 - Converter Graus Fahrenheit em Celsius</h1>
+<h1>Exercício 13 - Converter Metros para Centímetros</h1>
   <p>
 
   <form method="post" action="resposta.php">
 
     <div class="row">
       <div class="col-3">
-        <label for="valor1" class="form-label">Temperatura em Graus Fahrenheit:</label>
-        <input type="number" id="valor1" name="valor1" class="form-control" required="">
+        <label for="metro" class="form-label">Valor em Metros:</label>
+        <input type="number" id="metro" name="metro" class="form-control" required="">
       </div>
 
+    
     </div>
 
     <button type="submit" class="btn btn-primary">Enviar</button>
