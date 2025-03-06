@@ -13,13 +13,11 @@
                 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                         $valor1 = $_POST['valor1'];
                         $valor2 = $_POST['valor2'];
-                        if ($valor2 == 0) {
-                          echo "O segundo valor não pode ser igual a 0.";
-                        }
-                        else {
-                          $div = $valor1 / $valor2;
-                          echo "O valor da divisão é: $div";}
-                    }
+                        $valor3 = $_POST['valor3'];
+                        
+                        $media = ($valor1 + $valor2 + $valor3) / 3;
+                        echo "O média das notas é: $media";}
+                    
             ?>
         </p>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
