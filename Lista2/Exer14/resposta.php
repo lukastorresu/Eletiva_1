@@ -14,9 +14,9 @@
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       try {
-        $metro = $_POST['metro'];
-        $cm = $metro * 100;
-        echo "A distância em Centímetros é: $cm cm";
+        $km = $_POST['km'];
+        $milha = $km * 0.621371;
+        echo "A distância em Milhas é: $milha milhas";
       } catch (Exception $e) {
         echo $e->getMessage();  
       }
