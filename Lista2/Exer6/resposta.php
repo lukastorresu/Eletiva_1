@@ -12,11 +12,9 @@
             <?php 
                 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                         $valor1 = $_POST['valor1'];
-                        $valor2 = $_POST['valor2'];
-                        $valor3 = $_POST['valor3'];
                         
-                        $media = ($valor1 + $valor2 + $valor3) / 3;
-                        echo "O média das notas é: $media";}
+                        $f = ( ($valor1 * 9) / 5) + 32;
+                        echo "A temperatura em Fahrenheit é: $f ºF";}
                     
             ?>
         </p>
