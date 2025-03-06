@@ -14,9 +14,10 @@
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       try {
-        $km = $_POST['km'];
-        $milha = $km * 0.621371;
-        echo "A distância em Milhas é: $milha milhas";
+        $peso = $_POST['peso'];
+        $altura = floatval($_POST['altura']);
+        $imc = $peso / ( $altura * $altura );
+        echo "Seu IMC é igual a: $imc ";
       } catch (Exception $e) {
         echo $e->getMessage();  
       }

@@ -9,18 +9,21 @@
 </head>
 
 <body>
-<h1>Exercício 14 - Converter Quilômetros para Milhas</h1>
+<h1>Exercício 15 - Calcular IMC</h1>
   <p>
 
   <form method="post" action="resposta.php">
 
-    <div class="row">
-      <div class="col-3">
-        <label for="km" class="form-label">Valor em Quilômetros:</label>
-        <input type="number" id="km" name="km" class="form-control" required="">
+  <div class="row">
+      <div class="col-2">
+        <label for="peso" class="form-label">Peso:</label>
+        <input type="number" id="peso" name="peso" class="form-control" required="">
       </div>
 
-    
+      <div class="col-2">
+        <label for="altura" class="form-label">Altura:</label>
+        <input type="text" id="altura" name="altura" class="form-control" required="">
+      </div>
     </div>
 
     <button type="submit" class="btn btn-primary">Enviar</button>
