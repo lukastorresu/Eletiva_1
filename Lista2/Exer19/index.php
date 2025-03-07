@@ -9,25 +9,15 @@
 </head>
 
 <body>
-<h1>Exercício 18 - Calcular Juros Composto</h1>
+<h1>Exercício 19 - Converter Dias em Horas, Minutos e Segundos</h1>
   <p>
 
   <form method="post" action="resposta.php">
 
   <div class="row">
       <div class="col-2">
-        <label for="capital" class="form-label">Capital R$:</label>
-        <input type="text" id="capital" name="capital" class="form-control" required="">
-      </div>
-
-      <div class="col-2">
-        <label for="taxa" class="form-label">Taxa de Juros (%):</label>
-        <input type="text" id="taxa" name="taxa" class="form-control" required="">
-      </div>
-
-      <div class="col-2">
-        <label for="periodo" class="form-label">Período:</label>
-        <input type="number" id="periodo" name="periodo" class="form-control" required="">
+        <label for="dias" class="form-label">Quantidade de Dias:</label>
+        <input type="number" id="dias" name="dias" class="form-control" required="">
       </div>
     </div>
 
