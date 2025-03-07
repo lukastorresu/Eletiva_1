@@ -9,20 +9,25 @@
 </head>
 
 <body>
-<h1>Exercício 16 - Calcular Desconto</h1>
+<h1>Exercício 17 - Calcular Juros Simples</h1>
   <p>
 
   <form method="post" action="resposta.php">
 
   <div class="row">
       <div class="col-2">
-        <label for="preco" class="form-label">Preço:</label>
-        <input type="text" id="preco" name="preco" class="form-control" required="">
+        <label for="capital" class="form-label">Capital R$:</label>
+        <input type="text" id="capital" name="capital" class="form-control" required="">
       </div>
 
       <div class="col-2">
-        <label for="desconto" class="form-label">Porcentagem do Desconto:</label>
-        <input type="text" id="desconto" name="desconto" class="form-control" required="">
+        <label for="taxa" class="form-label">Taxa de Juros (%):</label>
+        <input type="text" id="taxa" name="taxa" class="form-control" required="">
+      </div>
+
+      <div class="col-2">
+        <label for="periodo" class="form-label">Período:</label>
+        <input type="number" id="periodo" name="periodo" class="form-control" required="">
       </div>
     </div>
 

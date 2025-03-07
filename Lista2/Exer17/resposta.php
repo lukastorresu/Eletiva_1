@@ -14,11 +14,12 @@
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       try {
-        $preco = floatval($_POST['preco']);
-        $desconto = floatval($_POST['desconto']);
-        $desconto = $desconto / 100;
-        $novo = $preco - ($preco * $desconto);
-        echo "O novo valor com o desconto é igual: R$ $novo ";
+        $capital = floatval($_POST['capital']);
+        $taxa = floatval($_POST['taxa']);
+        $periodo = $_POST['periodo'];
+        $taxa = $taxa / 100;
+        $mont = $capital + ($capital * $taxa * $periodo);
+        echo "O novo valor com o juros composto é igual: R$ $mont ";
       } catch (Exception $e) {
         echo $e->getMessage();  
       }
