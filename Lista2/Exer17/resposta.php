@@ -19,7 +19,7 @@
         $periodo = $_POST['periodo'];
         $taxa = $taxa / 100;
         $mont = $capital + ($capital * $taxa * $periodo);
-        echo "O novo valor com o juros composto é igual: R$ $mont ";
+        echo "O novo valor com o juros simples é igual: R$ $mont ";
       } catch (Exception $e) {
         echo $e->getMessage();  
       }
