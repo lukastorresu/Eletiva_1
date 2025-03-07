@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<h1>Exercício 17 - Calcular Juros Simples</h1>
+<h1>Exercício 18 - Calcular Juros Composto</h1>
   <p>
 
   <form method="post" action="resposta.php">
