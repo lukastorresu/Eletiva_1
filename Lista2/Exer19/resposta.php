@@ -14,12 +14,13 @@
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       try {
-        $capital = floatval($_POST['capital']);
-        $taxa = floatval($_POST['taxa']);
-        $periodo = $_POST['periodo'];
-        $taxa = $taxa / 100;
-        $mont = $capital + ($capital * ( 1 + $taxa ) ** $periodo);
-        echo "O novo valor com o juros composto é igual: R$ $mont ";
+        $dias = $_POST['dias'];
+        $horas = $dias * 24;
+        $minutos = $horas * 60;
+        $segundos = $minutos * 60;
+        echo "$dias dias equivalem a: $horas horas.".'<br>';
+        echo "$dias dias equivalem a: $minutos minutos.".'<br>';
+        echo "$dias dias equivalem a: $segundos segundos.";
       } catch (Exception $e) {
         echo $e->getMessage();  
       }
