@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <h1>Exercício 1 - Somar valores</h1>
+  <h1>Exercício 2 - Somar valores (triplo se iguais)</h1>
   <p>
 
   <form method="post" action="resposta.php">
