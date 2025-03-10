@@ -14,13 +14,11 @@
     <?php
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       try {
-        $dias = $_POST['dias'];
-        $horas = $dias * 24;
-        $minutos = $horas * 60;
-        $segundos = $minutos * 60;
-        echo "$dias dias equivalem a: $horas horas.".'<br>';
-        echo "$dias dias equivalem a: $minutos minutos.".'<br>';
-        echo "$dias dias equivalem a: $segundos segundos.";
+        $distancia = $_POST['distancia'];
+        $tempo = $_POST['tempo'];
+        $velocidade = $distancia / $tempo;
+        echo "A velocidade média é igual a: $velocidade m/s.";
+
       } catch (Exception $e) {
         echo $e->getMessage();  
       }
