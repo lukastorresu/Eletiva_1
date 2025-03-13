@@ -13,19 +13,12 @@
   <p>
     <?php
     $valor1 = $_POST['valor1'];
-    $valor2 = $_POST['valor2'];
-    $menor_valor = $valor1;
-    $maior_valor = $valor2;
-    if ($valor1 == $valor2){
-      echo "O valores são iguais: $valor1";
-    }elseif ($valor2 < $menor_valor){   
-      $menor_valor = $valor2;
-      $maior_valor = $valor1;
-      echo "Os valores em ordem crescente é: $menor_valor $maior_valor";
+    $valor1 = floatval($_POST['valor1']);
+    if ($valor1 > 100.00){
+      $novo_valor = $valor1 - ($valor1 * 0.15);
+      echo "O novo valor do produto com desconto de 15% é igual a: $novo_valor";
     }else{
-      $menor_valor = $valor1;
-      $maior_valor = $valor2;
-      echo "Os valores em ordem crescente é: $menor_valor $maior_valor";
+      echo "O valor do produto é igual ou inferior a R$100,00 .";
     }
     
     ?></p>
