@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <h1>Exercício 8 - Decrementar valores e exibir do valor informado a 1.</h1>
+  <h1>Exercício 10 - Imprimir tabuada do valor informado.</h1>
   <p>
 
   <form method="post" action="resposta.php">
