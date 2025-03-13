@@ -13,11 +13,11 @@
   <p>
     <?php
     $valor1 = $_POST['valor1'];
-    $i = 1;
-    do {
-      echo $valor1."<br>";
-      $valor1--;
-    } while ($valor1+1 > 1);
+    for ($i = 1; $i < $valor1+1; $i++){
+      $num = 1;
+      $result = $num * $i;
+      echo "$num X $i = $result".;
+    }
 
     ?></p>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
