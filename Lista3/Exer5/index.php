@@ -9,14 +9,14 @@
 </head>
 
 <body>
-  <h1>Exercício 4 - Desconto se acima de R$ 100 </h1>
+  <h1>Exercício 5 - Exibir Mês referente ao Número informado</h1>
   <p>
 
   <form method="post" action="resposta.php">
     <div class="row">
       <div class="col-2">
-        <label for="valor1" class="form-label">Preço do Produto: </label>
-        <input type="text" id="valor1" name="valor1" class="form-control" required="">
+        <label for="valor1" class="form-label">Digite o número do mês: </label>
+        <input type="number" id="valor1" name="valor1" class="form-control" required="">
       </div>
 
     </div>
