@@ -13,10 +13,10 @@
   <p>
     <?php
     $valor1 = $_POST['valor1'];
-    for ($i = 1; $i < $valor1+1; $i++){
-      $num = 1;
+    $num = $valor1;
+    for ($i = 1; $i < 10+1; $i++){
       $result = $num * $i;
-      echo "$num X $i = $result".;
+      echo "$num X $i = $result"."<br>";
     }
 
     ?></p>
