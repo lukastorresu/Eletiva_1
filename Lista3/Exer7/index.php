@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <h1>Exercício 6 - Exibir números até valor informado</h1>
+  <h1>Exercício 7 - Somar números até valor informado</h1>
   <p>
 
   <form method="post" action="resposta.php">
