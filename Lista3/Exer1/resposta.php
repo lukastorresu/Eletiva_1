@@ -21,9 +21,9 @@
     $valor7 = $_POST['valor7'];
     $menor_valor = $valor1;
     $posicao = 1;
-    if ($valor1 == $valor2){   
-        $soma = ($valor1 + $valor2) * 3;
-        echo "O valor da soma é: $soma";
+    if ($valor2 < $menor_valor){   
+      $menor_valor = $valor2;
+      $posicao = 2;
     }
       
 
