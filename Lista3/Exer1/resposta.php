@@ -25,6 +25,26 @@
       $menor_valor = $valor2;
       $posicao = 2;
     }
+    if ($valor3 < $menor_valor){   
+      $menor_valor = $valor3;
+      $posicao = 3;
+    }
+    if ($valor4 < $menor_valor){   
+      $menor_valor = $valor4;
+      $posicao = 4;
+    }
+    if ($valor5 < $menor_valor){   
+      $menor_valor = $valor5;
+      $posicao = 5;
+    }
+    if ($valor6 < $menor_valor){   
+      $menor_valor = $valor6;
+      $posicao = 6;
+    }
+    if ($valor7 < $menor_valor){   
+      $menor_valor = $valor7;
+      $posicao = 7;
+    }
       
 
     ?></p>
