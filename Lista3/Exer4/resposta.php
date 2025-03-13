@@ -16,7 +16,7 @@
     $valor1 = floatval($_POST['valor1']);
     if ($valor1 > 100.00){
       $novo_valor = $valor1 - ($valor1 * 0.15);
-      echo "O novo valor do produto com desconto de 15% é igual a: $novo_valor";
+      echo "O novo valor do produto com desconto de 15% é igual a: R$ $novo_valor";
     }else{
       echo "O valor do produto é igual ou inferior a R$100,00 .";
     }
