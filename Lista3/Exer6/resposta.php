@@ -13,8 +13,9 @@
   <p>
     <?php
     $valor1 = $_POST['valor1'];
-    for ($i; $i < $valor; $i++){
-      echo "$i";
+    $i = 1;
+    for ($i; $i < $valor1+1; $i++){
+      echo "$i"."<br>";
     }
     
     ?></p>
