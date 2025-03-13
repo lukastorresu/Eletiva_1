@@ -13,12 +13,46 @@
   <p>
     <?php
     $valor1 = $_POST['valor1'];
-    $valor1 = floatval($_POST['valor1']);
-    if ($valor1 > 100.00){
-      $novo_valor = $valor1 - ($valor1 * 0.15);
-      echo "O novo valor do produto com desconto de 15% é igual a: R$ $novo_valor";
-    }else{
-      echo "O valor do produto é igual ou inferior a R$100,00 .";
+    switch ($valor1) {
+      case 1:
+        echo "Janeiro";
+        break;
+      case 2:
+        echo "Janeiro";
+        break;
+      case 3:
+        echo "Janeiro";
+        break;
+      case 4:
+        echo "Janeiro";
+        break;
+      case 5:
+        echo "Janeiro";
+        break;
+      case 6:
+        echo "Janeiro";
+        break;
+      case 7:
+        echo "Janeiro";
+        break;
+      case 8:
+        echo "Janeiro";
+        break;
+      case 9:
+        echo "Janeiro";
+        break;
+      case 10:
+        echo "Janeiro";
+        break;
+      case 11:
+        echo "Janeiro";
+        break;
+      case 12:
+        echo "Janeiro";
+        break;
+      default:
+        echo "Mês inválido.";
+        break;
     }
     
     ?></p>
