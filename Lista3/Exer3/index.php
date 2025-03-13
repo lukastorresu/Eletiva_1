@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <h1>Exercício 1 - Receber 7 valores (retornar menor e posição)</h1>
+  <h1>Exercício 3 - Receber 2 valores (retornar em ordem crescente)</h1>
   <p>
 
   <form method="post" action="resposta.php">
@@ -22,31 +22,6 @@
       <div class="col-2">
         <label for="valor2" class="form-label">Valor 2</label>
         <input type="number" id="valor2" name="valor2" class="form-control" required="">
-      </div>
-      
-      <div class="col-2">
-        <label for="valor3" class="form-label">Valor 3</label>
-        <input type="number" id="valor3" name="valor3" class="form-control" required="">
-      </div>
-      
-      <div class="col-2">
-        <label for="valor4" class="form-label">Valor 4</label>
-        <input type="number" id="valor4" name="valor4" class="form-control" required="">
-      </div>
-      
-      <div class="col-2">
-        <label for="valor5" class="form-label">Valor 5</label>
-        <input type="number" id="valor5" name="valor5" class="form-control" required="">
-      </div>
-      
-      <div class="col-2">
-        <label for="valor6" class="form-label">Valor 6</label>
-        <input type="number" id="valor6" name="valor6" class="form-control" required="">
-      </div>
-      
-      <div class="col-2">
-        <label for="valor7" class="form-label">Valor 7</label>
-        <input type="number" id="valor7" name="valor7" class="form-control" required="">
       </div>
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
