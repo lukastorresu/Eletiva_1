@@ -19,11 +19,10 @@
     $valor5 = $_POST['valor5'];
     $valor6 = $_POST['valor6'];
     $valor7 = $_POST['valor7'];
+    $menor_valor = $valor1;
+    $posicao = 1;
     if ($valor1 == $valor2){   
         $soma = ($valor1 + $valor2) * 3;
-        echo "O valor da soma é: $soma";
-    }else{
-        $soma = $valor1 + $valor2;
         echo "O valor da soma é: $soma";
     }
       
