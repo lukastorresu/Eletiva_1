@@ -45,7 +45,8 @@
       $menor_valor = $valor7;
       $posicao = 7;
     }
-      
+    echo "O menor valor é: $menor_valor".'<br>';
+    echo "A posição do menor valor na sequência de entrada é: $posicao";
 
     ?></p>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
