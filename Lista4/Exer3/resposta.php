@@ -13,11 +13,16 @@
   <p>
     <?php
     function Verificar($palavra1,$palavra2){
-
-    }
+      return str_contains($palavra1, $palavra2) || str_contains($palavra2, $palavra1);
+        
+      }
     $palavra1 = strval($_POST['palavra1']); 
     $palavra2 = strval($_POST['palavra2']); 
-
+    if (Verificar($palavra1,$palavra2) == True){
+      echo "$palavra1 é contida em $palavra2 .";
+    }else{
+      echo "$palavra1 não é contida em $palavra .";
+    }
    
     ?></p>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
