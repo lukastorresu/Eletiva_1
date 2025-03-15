@@ -12,15 +12,22 @@
   <h1>Resposta</h1>
   <p>
     <?php
-    function Verificar($palavra1,$palavra2){
-      return str_contains($palavra1, $palavra2); 
+    function VerificarMes($dia,$mes,$ano){
+      if($mes >=1 || $mes <= 12){
+        return true;
       }
-    $palavra1 = strval($_POST['palavra1']); 
-    $palavra2 = strval($_POST['palavra2']); 
-    if (Verificar($palavra1,$palavra2) == True){
-      echo "$palavra2 é contida em $palavra1 .";
-    }else{
-      echo "$palavra2 não é contida em $palavra1 .";
+    }
+    function VerificarSeBissexto($dia,$mes,$ano){
+      if
+    }
+    $dia = $_POST['dia']; 
+    $mes = $_POST['mes'];
+    $ano = $_POST['ano']; 
+    if (VerificarMes($dia,$mes,$ano) == True){
+      if (VerificarSeBissexto($dia,$mes,$ano) == True){
+
+      }
+
     }
    
     ?></p>
