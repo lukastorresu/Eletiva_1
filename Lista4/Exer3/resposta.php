@@ -13,15 +13,14 @@
   <p>
     <?php
     function Verificar($palavra1,$palavra2){
-      return str_contains($palavra1, $palavra2) || str_contains($palavra2, $palavra1);
-        
+      return str_contains($palavra1, $palavra2); 
       }
     $palavra1 = strval($_POST['palavra1']); 
     $palavra2 = strval($_POST['palavra2']); 
     if (Verificar($palavra1,$palavra2) == True){
-      echo "$palavra1 é contida em $palavra2 .";
+      echo "$palavra2 é contida em $palavra1 .";
     }else{
-      echo "$palavra1 não é contida em $palavra .";
+      echo "$palavra2 não é contida em $palavra1 .";
     }
    
     ?></p>
