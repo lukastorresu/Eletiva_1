@@ -13,7 +13,7 @@ declare(strict_types=1);
 </head>
 
 <body>
-  <h1>Exercício 1 - Ler string e retornar quantidade de caracteres</h1>
+  <h1>Exercício 2 - Apresentar string em maíusculo e minúsculo.</h1>
   <p>
 
   <form method="post" action="resposta.php">
