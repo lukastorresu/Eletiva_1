@@ -13,10 +13,10 @@
   <p>
     <?php
     function Maiusculo($palavra){
-      echo "Palavra em maíusculo: ".strtoupper($palavra);
+      echo "Palavra em maíusculo: ".strtoupper($palavra)."<br>";
     }
     function Minusculo($palavra){
-      echo "Palavra em minusculo: ".strtolower($palavra);
+      echo "Palavra em minusculo: ".strtolower($palavra)."<br>";
     }
     $palavra = strval($_POST['palavra']); 
     Maiusculo($palavra);
