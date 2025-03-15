@@ -13,18 +13,21 @@ declare(strict_types=1);
 </head>
 
 <body>
-  <h1>Exercício 3 - Comparar e verificar se uma palavra está contida em outra.</h1>
+  <h1>Exercício 4 - Verificar se data é válida.</h1>
   <p>
 
   <form method="post" action="resposta.php">
     <div class="row">
       <div class="col-2">
-        <label for="palavra1" class="form-label">Digite uma palavra:</label>
-        <input type="text" id="palavra1" name="palavra1" class="form-control" required="">
+        <label for="dia" class="form-label">Digite o dia:</label>
+        <input type="text" id="dia" name="dia" class="form-control" required="">
       </div>
       <div class="col-2">
-        <label for="palavra2" class="form-label">Digite outra palavra:</label>
-        <input type="text" id="palavra2" name="palavra2" class="form-control" required="">
+        <label for="mes" class="form-label">Digite o mês:</label>
+        <input type="text" id="mes" name="mes" class="form-control" required="">
+      </div><div class="col-2">
+        <label for="ano" class="form-label">Digite o ano:</label>
+        <input type="text" id="ano" name="ano" class="form-control" required="">
       </div>
 
     </div>
