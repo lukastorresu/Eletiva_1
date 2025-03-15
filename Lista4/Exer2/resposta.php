@@ -16,7 +16,7 @@
       echo "Palavra em maíusculo: ".strtoupper($palavra);
     }
     function Minusculo($palavra){
-      echo "Palavra em maíusculo: ".strtolower($palavra);
+      echo "Palavra em minusculo: ".strtolower($palavra);
     }
     $palavra = strval($_POST['palavra']); 
     Maiusculo($palavra);
