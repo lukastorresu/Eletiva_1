@@ -13,14 +13,18 @@ declare(strict_types=1);
 </head>
 
 <body>
-  <h1>Exercício 2 - Apresentar string em maíusculo e minúsculo.</h1>
+  <h1>Exercício 3 - Comparar e verificar se uma palavra está contida em outra.</h1>
   <p>
 
   <form method="post" action="resposta.php">
     <div class="row">
       <div class="col-2">
-        <label for="palavra" class="form-label">Digite uma palavra:</label>
-        <input type="text" id="palavra" name="palavra" class="form-control" required="">
+        <label for="palavra1" class="form-label">Digite uma palavra:</label>
+        <input type="text" id="palavra1" name="palavra1" class="form-control" required="">
+      </div>
+      <div class="col-2">
+        <label for="palavra2" class="form-label">Digite outra palavra:</label>
+        <input type="text" id="palavra2" name="palavra2" class="form-control" required="">
       </div>
 
     </div>
