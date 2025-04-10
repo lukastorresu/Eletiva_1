@@ -13,23 +13,15 @@ declare(strict_types=1);
 </head>
 
 <body>
-  <h1>Exercício 4 - Verificar se data é válida.</h1>
+  <h1>Exercício 5 - Calcular raiz quadrada.</h1>
   <p>
 
   <form method="post" action="resposta.php">
     <div class="row">
       <div class="col-2">
-        <label for="dia" class="form-label">Digite o dia:</label>
-        <input type="text" id="dia" name="dia" class="form-control" required="">
+        <label for="valor1" class="form-label">Digite o valor:</label>
+        <input type="number" id="valor1" name="valor1" class="form-control" required="">
       </div>
-      <div class="col-2">
-        <label for="mes" class="form-label">Digite o mês:</label>
-        <input type="text" id="mes" name="mes" class="form-control" required="">
-      </div><div class="col-2">
-        <label for="ano" class="form-label">Digite o ano:</label>
-        <input type="text" id="ano" name="ano" class="form-control" required="">
-      </div>
-
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
