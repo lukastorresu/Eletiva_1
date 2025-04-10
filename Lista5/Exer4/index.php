@@ -14,16 +14,13 @@ declare(strict_types=1);
 </head>
 
 <body>
-  <h1>Exercício 3 - Cadastrar 5 produtos.</h1>
+  <h1>Exercício 4 - Cadastrar 5 produtos com imposto.</h1>
   <p>
 
   <form method="post" action="resposta.php">
     <?php for ($i = 1; $i <= 5; $i++): ?>
       <fieldset>
         <legend>Produto <?= $i ?></legend>
-        <label for="codigo<?= $i ?>">Código:</label>
-        <input type="text" id="codigo<?= $i ?>" name="produtos[<?= $i ?>][codigo]" required="">
-
         <label for="nome<?= $i ?>">Nome:</label>
         <input type="text" id="nome<?= $i ?>" name="produtos[<?= $i ?>][nome]" required>
 
