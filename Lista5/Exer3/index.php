@@ -22,9 +22,13 @@ declare(strict_types=1);
       <fieldset>
         <legend>Produto <?= $i ?></legend>
         <label for="codigo<?= $i ?>">Código:</label>
-        <input type="text" id="codigo<?= $i ?>" name="produtos[<?= $i ?>][codigo]" required=""><br>
+        <input type="text" id="codigo<?= $i ?>" name="produtos[<?= $i ?>][codigo]" required="">
 
+        <label for="nome<?= $i ?>">Nome:</label>
+        <input type="text" id="nome<?= $i ?>" name="produtos[<?= $i ?>][nome]" required>
 
+        <label for="preco<?= $i ?>">Preço (R$):</label>
+        <input type="number" id="preco<?= $i ?>" name="produtos[<?= $i ?>][preco]" step="0.01" min="0" required>
       </fieldset>
     <?php endfor; ?>
     <br>
