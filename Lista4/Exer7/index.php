@@ -13,14 +13,14 @@ declare(strict_types=1);
 </head>
 
 <body>
-  <h1>Exercício 6 - Arredondar valor.</h1>
+  <h1>Exercício 7 - Calcular diferença datas.</h1>
   <p>
 
   <form method="post" action="resposta.php">
     <div class="row">
       <div class="col-2">
-        <label for="valor1" class="form-label">Digite o valor:</label>
-        <input type="float" id="valor1" name="valor1" class="form-control" required="">
+      <label for="data1">Primeira data (dd/mm/aaaa):</label>
+      <input type="text" id="data1" name="data1" placeholder="dd/mm/aaaa" class="form-control" required="">
       </div>
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
