@@ -13,18 +13,17 @@ declare(strict_types=1);
 </head>
 
 <body>
-  <h1>Exercício 1 - Cadastrar 5 contatos.</h1>
+  <h1>Exercício 2 - Cadastrar 5 alunos.</h1>
   <p>
 
   <form method="post" action="resposta.php">
         <?php for ($i = 1; $i <= 5; $i++): ?>
-            <fieldset>
-                <legend>Contato <?php echo $i; ?></legend>
-                <label for="nome<?php echo $i; ?>">Nome:</label>
-                <input type="text" name="contatos[<?php echo $i; ?>][nome]" id="nome<?php echo $i; ?>" required="">
+          <fieldset>
+                <legend>Aluno <?= $i ?></legend>
+                <label for="nome<?= $i ?>">Nome:</label>
+                <input type="text" name="alunos[<?= $i ?>][nome]" id="nome<?= $i ?>" required="">
                 
-                <label for="telefone<?php echo $i; ?>">Telefone:</label>
-                <input type="text" name="contatos[<?php echo $i; ?>][telefone]" id="telefone<?php echo $i; ?>" required="">
+
             </fieldset>
         <?php endfor; ?>
         <br>
