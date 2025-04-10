@@ -12,24 +12,15 @@
   <h1>Resposta</h1>
   <p>
     <?php
-    function VerificarMes($dia,$mes,$ano){
-      if($mes >=1 || $mes <= 12){
-        return true;
-      }
+    function validarData($dia, $mes, $ano)
+    {
+      return checkdate($mes, $dia, $ano);
     }
-    function VerificarSeBissexto($dia,$mes,$ano){
-      if
-    }
-    $dia = $_POST['dia']; 
-    $mes = $_POST['mes'];
-    $ano = $_POST['ano']; 
-    if (VerificarMes($dia,$mes,$ano) == True){
-      if (VerificarSeBissexto($dia,$mes,$ano) == True){
 
-      }
+    $dia = $_POST['dia'] ?? 0;
+    $mes = $_POST['mes'] ?? 0;
+    $ano = $_POST['ano'] ?? 0;
 
-    }
-   
     ?></p>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
