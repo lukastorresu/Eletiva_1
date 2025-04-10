@@ -20,11 +20,13 @@
     foreach ($contatos as $contato) {
       $nome = $contato['nome'];
       $telefone = $contato['telefone'];
-      
-      if (){
 
-      }else{
-
+      if (!in_array($nome, $nomesCadastrados) && !in_array($telefone, $telefonesCadastrados)) {
+        $mapaContatos[$nome] = $telefone;
+        $nomesCadastrados[] = $nome;
+        $telefonesCadastrados[] = $telefone;
+      } else {
+        echo "<p style='color: red;'>Aviso: Contato duplicado ($nome - $telefone) .</p>";
       }
     }
 
