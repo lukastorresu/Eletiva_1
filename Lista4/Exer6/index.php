@@ -13,7 +13,7 @@ declare(strict_types=1);
 </head>
 
 <body>
-  <h1>Exercício 5 - Calcular raiz quadrada.</h1>
+  <h1>Exercício 6 - Arredondar valor.</h1>
   <p>
 
   <form method="post" action="resposta.php">
