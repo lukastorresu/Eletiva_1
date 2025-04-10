@@ -25,7 +25,10 @@ declare(strict_types=1);
                 
                 <label for="nota1_<?= $i ?>">Nota 1:</label>
                 <input type="number" name="alunos[<?= $i ?>][notas][]" id="nota1_<?= $i ?>" step="0.1" min="0" max="10" required="">
-
+                <label for="nota2_<?= $i ?>">Nota 2:</label>
+                <input type="number" name="alunos[<?= $i ?>][notas][]" id="nota2_<?= $i ?>" step="0.1" min="0" max="10" required="">
+                <label for="nota3_<?= $i ?>">Nota 3:</label>
+                <input type="number" name="alunos[<?= $i ?>][notas][]" id="nota3_<?= $i ?>" step="0.1" min="0" max="10" required="">
             </fieldset>
         <?php endfor; ?>
         <br>
