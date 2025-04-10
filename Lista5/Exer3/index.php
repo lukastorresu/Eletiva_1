@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 ?>
 
@@ -17,25 +18,20 @@ declare(strict_types=1);
   <p>
 
   <form method="post" action="resposta.php">
-        <?php for ($i = 1; $i <= 5; $i++): ?>
-          <fieldset>
-                <legend>Aluno <?= $i ?></legend>
-                <label for="nome<?= $i ?>">Nome:</label>
-                <input type="text" name="alunos[<?= $i ?>][nome]" id="nome<?= $i ?>" required="">
-                
-                <label for="nota1_<?= $i ?>">Nota 1:</label>
-                <input type="number" name="alunos[<?= $i ?>][notas][]" id="nota1_<?= $i ?>" step="0.1" min="0" max="10" required="">
-                <label for="nota2_<?= $i ?>">Nota 2:</label>
-                <input type="number" name="alunos[<?= $i ?>][notas][]" id="nota2_<?= $i ?>" step="0.1" min="0" max="10" required="">
-                <label for="nota3_<?= $i ?>">Nota 3:</label>
-                <input type="number" name="alunos[<?= $i ?>][notas][]" id="nota3_<?= $i ?>" step="0.1" min="0" max="10" required="">
-            </fieldset>
-        <?php endfor; ?>
-        <br>
-        <input type="submit" value="Enviar">
-    </form>
+    <?php for ($i = 1; $i <= 5; $i++): ?>
+      <fieldset>
+        <legend>Produto <?= $i ?></legend>
+        <label for="codigo<?= $i ?>">Código:</label>
+        <input type="text" id="codigo<?= $i ?>" name="produtos[<?= $i ?>][codigo]" required=""><br>
 
-  </p>  
+
+      </fieldset>
+    <?php endfor; ?>
+    <br>
+    <input type="submit" value="Enviar">
+  </form>
+
+  </p>
   </h1>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
