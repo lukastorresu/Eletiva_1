@@ -20,12 +20,12 @@
       $nome = $aluno['nome'];
       $notas = $aluno['notas'];
 
-      if (!in_array($nome, $nomesCadastrados) && !in_array($telefone, $telefonesCadastrados)) {
-        $mapaContatos[$nome] = $telefone;
+      if (!in_array($nome, $nomesCadastrados)) {
+        $media = array_sum($notas) / count($notas);
+        $mapaMedias[$nome] = $media;
         $nomesCadastrados[] = $nome;
-        $telefonesCadastrados[] = $telefone;
       } else {
-        echo "<p style='color: red;'>Aviso: Contato duplicado ($nome - $telefone) .</p>";
+        echo "<p style='color: red;'>Aviso: Aluno ($nome) duplicado.</p>";
       }
     }
 
