@@ -14,7 +14,7 @@ declare(strict_types=1);
 </head>
 
 <body>
-  <h1>Exercício 2 - Cadastrar 5 alunos.</h1>
+  <h1>Exercício 3 - Cadastrar 5 produtos.</h1>
   <p>
 
   <form method="post" action="resposta.php">
