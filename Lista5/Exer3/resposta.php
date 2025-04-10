@@ -12,13 +12,13 @@
   <h1>Resposta</h1>
   <p>
     <?php
-    $alunos = $_POST['alunos'] ?? [];
-    $mapaMedias = array();
-    $nomesCadastrados = array();
+    $produtos = $_POST['produtos'] ?? [];
+    $mapaProdutos = array();
 
-    foreach ($alunos as $aluno) {
-      $nome = $aluno['nome'];
-      $notas = $aluno['notas'];
+    foreach ($produtos as $produto) {
+      $codigo = $produto['codigo'];
+      $nome = $produto['nome'];
+      $preco = floatval($produto['preco']);
 
       if (!in_array($nome, $nomesCadastrados)) {
         $media = array_sum($notas) / count($notas);
@@ -32,7 +32,7 @@
     arsort($mapaMedias);
     echo "<ul>";
     foreach ($mapaMedias as $nome => $media) {
-        echo "<li><strong>$nome:</strong> " . number_format($media, 1) . "</li>";
+      echo "<li><strong>$nome:</strong> " . number_format($media, 1) . "</li>";
     }
     echo "</ul>";
 
