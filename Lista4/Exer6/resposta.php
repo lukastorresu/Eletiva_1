@@ -16,7 +16,7 @@
       return sqrt($valor1);
     }
 
-    $valor1 = $_POST['valor1'] ?? 0;
+    $valor1 = floatval($_POST['valor1'] ?? 0);
     echo "A raiz quadrada de $valor1 é " . calcularRaizQuadrada($valor1) . ".";
 
     ?></p>
