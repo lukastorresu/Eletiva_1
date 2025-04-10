@@ -20,13 +20,9 @@
       $nome = $produto['nome'];
       $preco = floatval($produto['preco']);
 
-      if (!in_array($nome, $nomesCadastrados)) {
-        $media = array_sum($notas) / count($notas);
-        $mapaMedias[$nome] = $media;
-        $nomesCadastrados[] = $nome;
-      } else {
-        echo "<p style='color: red;'>Aviso: Aluno ($nome) duplicado.</p>";
-      }
+      if ($preco > 100) {
+        $preco *= 0.9;
+    }
     }
 
     arsort($mapaMedias);
