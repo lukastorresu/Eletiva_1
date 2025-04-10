@@ -12,12 +12,13 @@
   <h1>Resposta</h1>
   <p>
     <?php
-    function calcularRaizQuadrada($valor1){
-      return sqrt($valor1);
-    }
+    function arredondarNumero($valor1) {
+
+  }
+  
 
     $valor1 = floatval($_POST['valor1'] ?? 0);
-    echo "A raiz quadrada de $valor1 é " . calcularRaizQuadrada($valor1) . ".";
+    echo "O número arredondado é " . arredondarNumero($valor1) . ".";
 
     ?></p>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
