@@ -29,6 +29,8 @@
         echo "<p style='color: red;'>Aviso: Contato duplicado ($nome - $telefone) .</p>";
       }
     }
+
+    ksort($mapaContatos);
     echo "<ul>";
     foreach ($mapaContatos as $nome => $telefone) {
       echo "<li><strong>$nome:</strong> $telefone</li>";
