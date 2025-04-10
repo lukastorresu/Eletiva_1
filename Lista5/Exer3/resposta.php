@@ -38,6 +38,7 @@
         foreach ($mapaProdutos as $codigo => $dados) {
             echo "<tr>";
             echo "<td>" . htmlspecialchars($codigo) . "</td>";
+            echo "<td>" . htmlspecialchars($dados['nome']) . "</td>";
             echo "</tr>";
         }
         echo "</table>";
