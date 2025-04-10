@@ -20,7 +20,7 @@ declare(strict_types=1);
     <div class="row">
       <div class="col-2">
         <label for="valor1" class="form-label">Digite o valor:</label>
-        <input type="number" id="valor1" name="valor1" class="form-control" required="">
+        <input type="float" id="valor1" name="valor1" class="form-control" required="">
       </div>
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
