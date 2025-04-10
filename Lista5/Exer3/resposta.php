@@ -22,10 +22,17 @@
 
       if ($preco > 100) {
         $preco *= 0.9;
-    }
+      }
+      $mapaProdutos[$codigo] = array(
+        'nome' => $nome,
+        'preco' => $preco
+      );
     }
 
-    arsort($mapaMedias);
+    uasort($mapaProdutos, function ($a, $b) {
+      return strcmp($a['nome'], $b['nome']);
+    });
+
     echo "<ul>";
     foreach ($mapaMedias as $nome => $media) {
       echo "<li><strong>$nome:</strong> " . number_format($media, 1) . "</li>";
