@@ -25,15 +25,12 @@
       );
     }
 
-    uasort($mapaProdutos, function ($a, $b) {
-      return strcmp($a['nome'], $b['nome']);
-    });
+    // falta fazer função para ordenar ainda
 
     echo "<table border='1'>";
         echo "<tr><th>Código</th><th>Nome</th><th>Preço (R$)</th></tr>";
-        foreach ($mapaProdutos as $codigo => $dados) {
+        foreach ($mapaProdutos as $nome => $dados) {
             echo "<tr>";
-            echo "<td>" . htmlspecialchars($codigo) . "</td>";
             echo "<td>" . htmlspecialchars($dados['nome']) . "</td>";
             echo "<td>" . number_format($dados['preco'], 2, ',', '.') . "</td>";
             echo "</tr>";
