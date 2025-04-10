@@ -12,9 +12,12 @@
   <h1>Resposta</h1>
   <p>
     <?php
-    function verificarContatos(){
-      
+    function verificarContatos(array $contatos): array {
+      $mapaContatos = [];
+      $telefonesCadastrados = [];
+      $duplicadosEncontrados = false;
     }
+
     $contatos = $_POST['contatos'] ?? [];
     $listaOrdenada = verificarContatos($contatos);
     
