@@ -39,6 +39,7 @@
             echo "<tr>";
             echo "<td>" . htmlspecialchars($codigo) . "</td>";
             echo "<td>" . htmlspecialchars($dados['nome']) . "</td>";
+            echo "<td>" . number_format($dados['preco'], 2, ',', '.') . "</td>";
             echo "</tr>";
         }
         echo "</table>";
