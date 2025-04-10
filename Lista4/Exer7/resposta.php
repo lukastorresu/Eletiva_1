@@ -12,13 +12,16 @@
   <h1>Resposta</h1>
   <p>
     <?php
-    function arredondarNumero($valor1) {
-      return round($valor1);
-  }
-  
-    $valor1 = floatval($_POST['valor1'] ?? 0);
-    echo "O número arredondado é " . arredondarNumero($valor1) . ".";
+    function calcDiferencaDatas($data1, $data2) {
+      
+    }
 
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      $data1 = $_POST['data1'];
+      $data2 = $_POST['data2'];
+      $diferenca = calcDiferencaDatas($data1, $data2);
+      echo 
+    }
     ?></p>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
