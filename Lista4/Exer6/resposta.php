@@ -13,10 +13,9 @@
   <p>
     <?php
     function arredondarNumero($valor1) {
-
+      return round($valor1);
   }
   
-
     $valor1 = floatval($_POST['valor1'] ?? 0);
     echo "O número arredondado é " . arredondarNumero($valor1) . ".";
 
