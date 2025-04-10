@@ -12,14 +12,13 @@
   <h1>Resposta</h1>
   <p>
     <?php
-    $contatos = $_POST['contatos'] ?? [];
-    $listaOrdenada = array();
+    $alunos = $_POST['alunos'] ?? [];
+    $mapaMedias = array();
     $nomesCadastrados = array();
-    $telefonesCadastrados = array();
 
-    foreach ($contatos as $contato) {
-      $nome = $contato['nome'];
-      $telefone = $contato['telefone'];
+    foreach ($alunos as $aluno) {
+      $nome = $aluno['nome'];
+      $notas = $aluno['notas'];
 
       if (!in_array($nome, $nomesCadastrados) && !in_array($telefone, $telefonesCadastrados)) {
         $mapaContatos[$nome] = $telefone;
