@@ -22,6 +22,10 @@ declare(strict_types=1);
       <label for="data1">Primeira data (dd/mm/aaaa):</label>
       <input type="text" id="data1" name="data1" placeholder="dd/mm/aaaa" class="form-control" required="">
       </div>
+      <div class="col-2">
+      <label for="data2">Segunda data (dd/mm/aaaa):</label>
+      <input type="text" id="data2" name="data2" placeholder="dd/mm/aaaa" class="form-control" required="">
+      </div>
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
