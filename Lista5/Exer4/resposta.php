@@ -16,15 +16,11 @@
     $mapaProdutos = array();
 
     foreach ($produtos as $produto) {
-      $codigo = $produto['codigo'];
       $nome = $produto['nome'];
       $preco = floatval($produto['preco']);
-
-      if ($preco > 100) {
-        $preco *= 0.9;
-      }
-      $mapaProdutos[$codigo] = array(
-        'nome' => $nome,
+      $preco *= 1.15;
+      
+      $mapaProdutos[$nome] = array(
         'preco' => $preco
       );
     }
