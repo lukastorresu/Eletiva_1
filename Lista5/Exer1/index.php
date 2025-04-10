@@ -22,6 +22,9 @@ declare(strict_types=1);
                 <legend>Contato <?php echo $i; ?></legend>
                 <label for="nome<?php echo $i; ?>">Nome:</label>
                 <input type="text" name="contatos[<?php echo $i; ?>][nome]" id="nome<?php echo $i; ?>" required="">
+                
+                <label for="telefone<?php echo $i; ?>">Telefone:</label>
+                <input type="text" name="contatos[<?php echo $i; ?>][telefone]" id="telefone<?php echo $i; ?>" required="">
             </fieldset>
         <?php endfor; ?>
         <br>
