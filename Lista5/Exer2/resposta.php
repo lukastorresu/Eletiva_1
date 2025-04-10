@@ -29,10 +29,10 @@
       }
     }
 
-    ksort($mapaContatos);
+    arsort($mapaMedias);
     echo "<ul>";
-    foreach ($mapaContatos as $nome => $telefone) {
-      echo "<li><strong>$nome:</strong> $telefone</li>";
+    foreach ($mapaMedias as $nome => $media) {
+        echo "<li><strong>$nome:</strong> " . number_format($media, 1) . "</li>";
     }
     echo "</ul>";
 
