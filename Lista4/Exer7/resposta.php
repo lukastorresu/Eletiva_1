@@ -14,14 +14,15 @@
     <?php
     function calcDiferencaDatas($data1, $data2)
     {
-      $data1 = DateTime::createFromFormat('dd/mm/YYYY', $data1);
-      $data2 = DateTime::createFromFormat('dd/mm/YYYY', $data2);
+      $data1 = DateTime::createFromFormat('d/m/Y', $data1);
+      $data2 = DateTime::createFromFormat('d/m/Y', $data2);
 
       if ($data1 && $data2) {
-        return $data1->diff($data2)->days;
-      }
-      return false;
+        $diferenca = $data1->diff($data2);
+        return $diferenca->days;
     }
+    return "Datas inválidas";
+}
 
     $data1 = $_POST['data1'] ?? '';
     $data2 = $_POST['data2'] ?? '';
