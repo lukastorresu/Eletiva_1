@@ -14,18 +14,18 @@ declare(strict_types=1);
 </head>
 
 <body>
-  <h1>Exercício 4 - Cadastrar 5 produtos com imposto.</h1>
+  <h1>Exercício 5 - Cadastrar 5 livros (verificar estoque).</h1>
   <p>
 
   <form method="post" action="resposta.php">
     <?php for ($i = 1; $i <= 5; $i++): ?>
       <fieldset>
         <legend>Produto <?= $i ?></legend>
-        <label for="nome<?= $i ?>">Nome:</label>
-        <input type="text" id="nome<?= $i ?>" name="produtos[<?= $i ?>][nome]" required>
+        <label for="livro<?= $i ?>">Livro:</label>
+        <input type="text" id="livro<?= $i ?>" name="produtos[<?= $i ?>][livro]" required>
 
-        <label for="preco<?= $i ?>">Preço (R$):</label>
-        <input type="number" id="preco<?= $i ?>" name="produtos[<?= $i ?>][preco]" step="0.01" min="0" required>
+        <label for="qtde<?= $i ?>">Quantidade:</label>
+        <input type="number" id="qtde<?= $i ?>" name="produtos[<?= $i ?>][qtde]" min="0" required>
       </fieldset>
     <?php endfor; ?>
     <br>
