@@ -21,7 +21,8 @@
       $preco *= 1.15;
 
       $mapaProdutos[$nome] = array(
-        'preco' => $preco,'nome'=>$nome //teste
+        'preco' => $preco,
+        'nome' => $nome
       );
     }
 
