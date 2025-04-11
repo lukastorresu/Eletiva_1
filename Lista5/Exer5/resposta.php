@@ -26,12 +26,12 @@
     }
 
     uasort($mapaLivros, function ($a, $b) {
-      return $a['nome'] <=> $b['nome'];
+      return $a['livro'] <=> $b['livro'];
     });
 
     echo "<table border='1'>";
     echo "<tr><th>Livro</th><th>qtde</th></tr>";
-    foreach ($mapalivros as $livro => $dados) {
+    foreach ($mapaLivros as $livro => $dados) {
       echo "<tr>";
       echo "<td>" . htmlspecialchars($dados['livro']) . "</td>";
       echo "<td>" . number_format($dados['qtde']) . "</td>";
