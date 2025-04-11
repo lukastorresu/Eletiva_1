@@ -34,6 +34,9 @@
     echo "<table border='1'>";
     echo "<tr><th>Título</th><th>qtde</th></tr>";
     foreach ($mapaLivros as $livro => $dados) {
+      if ($dados['qtde'] < 5){
+        echo "<p style='color: red;'>Aviso: Livro ".($dados['titulo'])." tem poucas unidades no estoque.</p>";
+      }
       echo "<tr>";
       echo "<td>" . htmlspecialchars($dados['titulo']) . "</td>";
       echo "<td>" . number_format($dados['qtde']) . "</td>";
