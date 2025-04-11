@@ -17,10 +17,10 @@
 
     foreach ($livros as $livro) {
       $livro = $livro['livro'];
-      $qntd = $qntd['qntd'];
+      $qtde = $qtde['qtde'];
 
       $mapaLivros[$livro] = array(
-        'qntd' => $qntd,
+        'qtde' => $qtde,
         'livro' => $livro
       );
     }
@@ -30,11 +30,11 @@
     });
 
     echo "<table border='1'>";
-    echo "<tr><th>Livro</th><th>Qntd</th></tr>";
+    echo "<tr><th>Livro</th><th>qtde</th></tr>";
     foreach ($mapalivros as $livro => $dados) {
       echo "<tr>";
       echo "<td>" . htmlspecialchars($dados['livro']) . "</td>";
-      echo "<td>" . number_format($dados['qntd']) . "</td>";
+      echo "<td>" . number_format($dados['qtde']) . "</td>";
       echo "</tr>";
     }
     echo "</table>";
