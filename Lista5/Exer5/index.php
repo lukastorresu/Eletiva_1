@@ -22,10 +22,10 @@ declare(strict_types=1);
       <fieldset>
         <legend>Produto <?= $i ?></legend>
         <label for="livro<?= $i ?>">Livro:</label>
-        <input type="text" id="livro<?= $i ?>" name="produtos[<?= $i ?>][livro]" required>
+        <input type="text" id="livro<?= $i ?>" name="livros[<?= $i ?>][livro]" required>
 
         <label for="qtde<?= $i ?>">Quantidade:</label>
-        <input type="number" id="qtde<?= $i ?>" name="produtos[<?= $i ?>][qtde]" min="0" required>
+        <input type="number" id="qtde<?= $i ?>" name="livros[<?= $i ?>][qtde]" min="0" required>
       </fieldset>
     <?php endfor; ?>
     <br>
