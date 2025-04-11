@@ -21,8 +21,8 @@ declare(strict_types=1);
     <?php for ($i = 1; $i <= 5; $i++): ?>
       <fieldset>
         <legend>Produto <?= $i ?></legend>
-        <label for="livro<?= $i ?>">Livro:</label>
-        <input type="text" id="livro<?= $i ?>" name="livros[<?= $i ?>][livro]" required>
+        <label for="titulo<?= $i ?>">Livro:</label>
+        <input type="text" id="titulo<?= $i ?>" name="livros[<?= $i ?>][titulo]" required>
 
         <label for="qtde<?= $i ?>">Quantidade:</label>
         <input type="number" id="qtde<?= $i ?>" name="livros[<?= $i ?>][qtde]" min="0" required>

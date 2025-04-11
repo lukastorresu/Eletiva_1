@@ -13,27 +13,29 @@
   <p>
     <?php
     $livros = $_POST['livros'] ?? [];
+    $qtde = $_POST['qtde'] ?? 0;
     $mapaLivros = array();
 
     foreach ($livros as $livro) {
-      $livro = $livro['livro'];
-      $qtde = $qtde['qtde'];
+      $titulo = $livro['livro'];
+      $qtde = $livro['qtde'];
 
-      $mapaLivros[$livro] = array(
+
+      $mapaLivros[$titulo] = array(
         'qtde' => $qtde,
-        'livro' => $livro
+        'titulo' => $titulo
       );
     }
 
     uasort($mapaLivros, function ($a, $b) {
-      return $a['livro'] <=> $b['livro'];
+      return $a['titulo'] <=> $b['titulo'];
     });
 
     echo "<table border='1'>";
-    echo "<tr><th>Livro</th><th>qtde</th></tr>";
+    echo "<tr><th>Título</th><th>qtde</th></tr>";
     foreach ($mapaLivros as $livro => $dados) {
       echo "<tr>";
-      echo "<td>" . htmlspecialchars($dados['livro']) . "</td>";
+      echo "<td>" . htmlspecialchars($dados['titulo']) . "</td>";
       echo "<td>" . number_format($dados['qtde']) . "</td>";
       echo "</tr>";
     }
