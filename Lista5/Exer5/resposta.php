@@ -12,30 +12,29 @@
   <h1>Resposta</h1>
   <p>
     <?php
-    $produtos = $_POST['produtos'] ?? [];
-    $mapaProdutos = array();
+    $livros = $_POST['livros'] ?? [];
+    $mapaLivros = array();
 
-    foreach ($produtos as $produto) {
-      $nome = $produto['nome'];
-      $preco = floatval($produto['preco']);
-      $preco *= 1.15;
+    foreach ($livros as $livro) {
+      $livro = $livro['livro'];
+      $qntd = $qntd['qntd'];
 
-      $mapaProdutos[$nome] = array(
-        'preco' => $preco,
-        'nome' => $nome
+      $mapaLivros[$livro] = array(
+        'qntd' => $qntd,
+        'livro' => $livro
       );
     }
 
-    uasort($mapaProdutos, function ($a, $b) {
-      return $a['preco'] <=> $b['preco'];
+    uasort($mapaLivros, function ($a, $b) {
+      return $a['nome'] <=> $b['nome'];
     });
 
     echo "<table border='1'>";
-    echo "<tr><th>Nome</th><th>Preço (R$)</th></tr>";
-    foreach ($mapaProdutos as $nome => $dados) {
+    echo "<tr><th>Livro</th><th>Qntd</th></tr>";
+    foreach ($mapalivros as $livro => $dados) {
       echo "<tr>";
-      echo "<td>" . htmlspecialchars($dados['nome']) . "</td>";
-      echo "<td>" . number_format($dados['preco'], 2, ',', '.') . "</td>";
+      echo "<td>" . htmlspecialchars($dados['livro']) . "</td>";
+      echo "<td>" . number_format($dados['qntd']) . "</td>";
       echo "</tr>";
     }
     echo "</table>";
