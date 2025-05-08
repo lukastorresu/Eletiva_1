@@ -11,7 +11,31 @@
         }
     }
 
+    function inserirProduto($nome, $descricao, $preco, $categoria){
+        require("conexao.php");
+        try {
+            $sql = "INSERT into produto (nome, descricao, preco, categoria_id)
+            VALUES (?,?,?,?)";
+            $stmt = $pdo->PREPARE($sql);
+            if ($stmt->execute([$nome, $descricao, $preco, $categoria]))
+                header("location> produtos.php?cadastro=true");
+            else
+                header("location> produtos.php?cadastro-false");
+            return $stmt->fetchAll();
+        } catch (Exception $e) {
+            die("Erro ao inserir produto: ".$e->getMessage());
+        }
+    }
+
     $categorias = retornaCategorias();
+
+    if ($_SERVER['REQUET_METHOD'] == "POST"){
+        $nome = $_POST['nome'];
+        $descricao = $_POST['descricao'];
+        $preco = $_POST['preco'];
+        $cataegoria = $_POST['categoria'];    
+        inserirProduto($nome,$descricao,$preco,$categoria);
+    }
 ?>
 
     <h2>Novo Produto</h2>
@@ -32,7 +56,7 @@
         </div>
         <div class="mb-3">
             <label for="categoria" class="form-label">Categoria</label>
-            <select id="categoria" name="categoria" class="form-control" required="">
+            <select id="categoria" name="categoria" class="form-select" required="">
             <?php
                 foreach($categorias as $c):
             ?>
