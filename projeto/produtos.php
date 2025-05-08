@@ -2,7 +2,11 @@
   require_once("cabecalho.php");
 
   function retornaProdutos(){
+    require("conexão.php");
     try{
+        $sql = "SELECT p.*, c.nome as nome_categoria
+        FROM produto p
+        INNER JOIN categoria c ON c.id = p.categoria_id";
 
     }catch (Exception $e){
 
