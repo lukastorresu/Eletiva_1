@@ -7,11 +7,14 @@
         $sql = "SELECT p.*, c.nome as nome_categoria
         FROM produto p
         INNER JOIN categoria c ON c.id = p.categoria_id";
-
+        $stmt = $pdo->query($sql);
+        return $stmt->fetchAll();
     }catch (Exception $e){
-
+        die("Erro ao consultar produtos: ".$e->getMessage());
     }
 }
+
+$produtos = retornaProdutos();
 ?>
   
 <h2>Produtos</h2>
