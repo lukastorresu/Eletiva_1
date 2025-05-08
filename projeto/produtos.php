@@ -28,6 +28,10 @@ $produtos = retornaProdutos();
         </tr>
     </thead>
     <tbody>
+        <?php
+            foreach($produtos as $p):
+        ?>
+        
       <tr>
           <td>1</td>
           <td>Exemplo</td><td>Exemplo</td><td>Exemplo</td>
