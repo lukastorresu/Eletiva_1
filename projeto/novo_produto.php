@@ -34,10 +34,11 @@
             <label for="categoria" class="form-label">Categoria</label>
             <select id="categoria" name="categoria" class="form-control" required="">
             <?php
-                foreach($categorias as $c);
+                foreach($categorias as $c):
             ?>
-                <option value="<?= $c['id'] ?>"><c? =</option>
+                <option value="<?= $c['id'] ?>"><?= $c['nome'] ?></option>
             <?php
+                endforeach;
             ?>
         </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
