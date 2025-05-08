@@ -1,5 +1,17 @@
 <?php
     require_once("cabecalho.php");
+    function retornaCategorias(){
+        require("conexao.php");
+        try {
+            $sql = "SELECT * FROM categoria";
+            $stmt = $pdo->query($sql);
+            return $stmt->fetchAll();
+        } catch (Exception $e) {
+            die("Erro ao consultar categorias: ".$e->getMessage());
+        }
+    }
+
+    $categorias = retornaCategorias();
 ?>
 
     <h2>Novo Produto</h2>
@@ -17,6 +29,16 @@
         <div class="mb-3">
             <label for="valor" class="form-label">Valor</label>
             <input type="number" id="valor" name="valor" class="form-control" required="">
+        </div>
+        <div class="mb-3">
+            <label for="categoria" class="form-label">Categoria</label>
+            <select id="categoria" name="categoria" class="form-control" required="">
+            <?php
+                foreach($categorias as $c);
+            ?>
+                <option value="<?= $c['id'] ?>"><c? =</option>
+            <?php
+            ?>
         </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
     <button type="button" class="btn btn-secondary"
