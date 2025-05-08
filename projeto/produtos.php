@@ -36,38 +36,6 @@ $produtos = retornaProdutos();
               <a href="consultar_produto.php" class="btn btn-info">Consultar</a>
           </td>
       </tr>
-      <tr>
-          <td>2</td>
-          <td>Exemplo</td><td>Exemplo</td><td>Exemplo</td>
-          <td>
-              <a href="#" class="btn btn-warning">Editar</a>
-              <a href="#" class="btn btn-info">Consultar</a>
-          </td>
-      </tr>
-      <tr>
-          <td>3</td>
-          <td>Exemplo</td><td>Exemplo</td><td>Exemplo</td>
-          <td>
-              <a href="#" class="btn btn-warning">Editar</a>
-              <a href="#" class="btn btn-info">Consultar</a>
-          </td>
-      </tr>
-      <tr>
-          <td>4</td>
-          <td>Exemplo</td><td>Exemplo</td><td>Exemplo</td>
-          <td>
-              <a href="#" class="btn btn-warning">Editar</a>
-              <a href="#" class="btn btn-info">Consultar</a>
-          </td>
-      </tr>  
-      <tr>
-          <td>5</td>
-          <td>Exemplo</td><td>Exemplo</td><td>Exemplo</td>
-          <td>
-              <a href="#" class="btn btn-warning">Editar</a>
-              <a href="#" class="btn btn-info">Consultar</a>
-          </td>
-      </tr>
     </tbody>
 </table>
 
