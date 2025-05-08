@@ -1,5 +1,13 @@
 <?php
   require_once("cabecalho.php");
+
+  function retornaProdutos(){
+    try{
+
+    }catch (Exception $e){
+
+    }
+}
 ?>
   
 <h2>Produtos</h2>
